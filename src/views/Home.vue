@@ -1,17 +1,13 @@
 <script setup>
 
-import Banner from "./Banner.vue"
-import Navigation from "./Navigation.vue"
-import About from "./About.vue"
+import About from "../components/About.vue"
 
 </script>
 
 <template>
-  <Banner />
-  <Navigation />
   <div id="InfoBoard">
     <img />
-      
+    
   </div>
   <About />
 </template>

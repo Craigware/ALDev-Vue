@@ -1,11 +1,16 @@
+<script setup>
+import { RouterLink, RouterView } from 'vue-router'
+</script>
+
 <template>
   <nav id="Navigation">
-    <a class="nav-item" href="#Banner">Home</a>
-    <a class="nav-item" href="#About">About</a>
-    <a class="nav-item">Development Log</a>
-    <a class="nav-item">Releases</a>
-    <a class="nav-item">In Development</a>
+    <RouterLink to="/" class="nav-item" >Home</RouterLink>
+    <RouterLink to="/Devlog" class="nav-item" >Development Log</RouterLink>
+    <RouterLink to="/Releases" class="nav-item" >Releases</RouterLink>
+    <RouterLink to="/Projects" class="nav-item" >Projects</RouterLink>
   </nav>
+
+  <RouterView />
 </template>
 
 <style scoped>
