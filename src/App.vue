@@ -39,7 +39,7 @@ const currentTheme = ref(darkTheme);
 
 
 <template>
-    <Banner v-show="this.$route.name == 'home' "/>
+    <Banner id="Banner" v-show="this.$route.name == 'home' "/>
     <Navigation />
     <Foot></Foot>
 </template>
@@ -54,10 +54,5 @@ const currentTheme = ref(darkTheme);
 
   margin: 0;
   padding: 0;
-}
-
-p {
-  background-color: var(--shadow-color);
-  color: var(--shadow-color);
 }
 </style>
