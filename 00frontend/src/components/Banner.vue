@@ -1,5 +1,6 @@
 
 <script setup>
+
 import * as THREE from 'three';
 import { onMounted, render } from 'vue';
 
@@ -15,11 +16,11 @@ onMounted(() => {
   renderer.setSize( window.innerWidth, bannerHeight );
 
   const geometry = new THREE.BoxGeometry(2, 2, 2);
-  const material = new THREE.MeshStandardMaterial( { color: 'red' } );
+  const material = new THREE.MeshStandardMaterial( { color: 'yellow' } );
   const cube = new THREE.Mesh( geometry, material );
 
 
-  const light = new THREE.PointLight( 0xff0000, 1, 1000 );
+  const light = new THREE.PointLight( 'blue', 200, 1000 );
   light.castShadow = true;
 
   const dirlight = new THREE.DirectionalLight( 0xFFFFFF );
@@ -30,7 +31,7 @@ onMounted(() => {
   const helper = new THREE.DirectionalLightHelper( dirlight, 3 );
   scene.add( helper );
 
-  light.position.set( 2, 0, 4 );
+  light.position.set( -1, -2, 4 );
   scene.add( light );
 
 
@@ -46,10 +47,6 @@ onMounted(() => {
   renderer.render( scene, camera );
 });
 
-function test()
-{
-  console.log("w")
-}
 </script>
 
 <template>
