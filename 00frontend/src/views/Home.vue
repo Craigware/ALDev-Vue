@@ -1,14 +1,12 @@
 <script setup>
 
-import About from "../components/About.vue"
+import About from "../components/home/About.vue"
+import InfoBoard from "@/components/home/InfoBoard.vue";
 
 </script>
 
 <template>
-  <div id="InfoBoard">
-    <img />
-    
-  </div>
+  <InfoBoard />
   <About />
 </template>
 

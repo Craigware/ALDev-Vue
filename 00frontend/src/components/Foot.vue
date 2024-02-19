@@ -7,7 +7,7 @@
 
 <style scoped>
   #Footer {
-    background-color: rgb(64, 87, 110);
+    background-color: var(--200-orange);
     padding: 8px;
     position: sticky;
     bottom: 0;

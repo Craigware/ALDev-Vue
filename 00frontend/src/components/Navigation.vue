@@ -10,13 +10,17 @@ import { RouterLink, RouterView } from 'vue-router'
     <RouterLink to="/Projects" class="nav-item" >Projects</RouterLink>
   </nav>
 
-  <RouterView />
+  <RouterLink to="/Projects/CreatureCrawler" />
+  <main>
+    <RouterView />
+  </main>
 </template>
 
 <style scoped>
+
   #Navigation {
     padding: 8px;
-    background-color: lightblue;
+    background-color: var(--600-orange);
     justify-content: space-evenly;
   }
 
@@ -30,6 +34,7 @@ import { RouterLink, RouterView } from 'vue-router'
   }
   
   .nav-item:hover {
-    background-color: rgba(0, 0, 255, 0.192);
+    background-color: var(--600-yellow);
   }
+
 </style>

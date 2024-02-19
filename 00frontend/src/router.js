@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from "./views/Home.vue"
 import Releases from './views/Releases.vue'
+import CreatureCrawlerProject from './views/CreatureCrawlerProject.vue'
 
 const routes =
 [
@@ -23,6 +24,16 @@ const routes =
     path: '/Releases',
     name: 'release-list',
     component: Releases
+  },
+  {
+    path: '/Projects',
+    name: 'project-list',
+    component: Releases
+  },
+  {
+    path: '/Projects/CreatureCrawler',
+    name: 'creature-crawler',
+    component: CreatureCrawlerProject
   }
 ]
 
